@@ -1,4 +1,4 @@
-package com.zxd.rentsystemprovider6666;
+package com.zxd.rentsystem;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
