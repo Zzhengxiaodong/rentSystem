@@ -1,0 +1,36 @@
+edition: 3.0.0
+name: fc3-example
+access: default
+resources:
+  fcDemo:
+    component: fc3
+    props:
+      region: cn-shenzhen
+      handler: handler
+      role: ''
+      description: Serverless Devs Web Framework Function
+      timeout: 3
+      diskSize: 512
+      internetAccess: true
+      customRuntimeConfig:
+        command:
+          - ./bootstrap
+      functionName: springboot-uvhw
+      runtime: custom
+      cpu: 1
+      instanceConcurrency: 100
+      memorySize: 2048
+      code: 在此处填写您的代码地址，例如：./code.zip
+      triggers:
+        - triggerConfig:
+            methods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+            authType: anonymous
+            disableURLInternet: false
+          triggerName: httpTrigger
+          description: ''
+          qualifier: LATEST
+          triggerType: http
