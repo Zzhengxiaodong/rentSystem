@@ -2,7 +2,7 @@ edition: 3.0.0
 name: springboot-app-mdn
 access: default
 vars: 
-  region: cn-hangzhou
+  region: cn-shenzhen
   functionName: java-FC-1
 
 resources:
@@ -13,7 +13,7 @@ resources:
         - run: mvn package -DskipTests
           path: ./
     props:
-      region: cn-hangzhou
+      region: cn-shenzhen
       functionName: java-FC-1
       description: Initialize
       runtime: custom
