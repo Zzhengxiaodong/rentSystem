@@ -11,7 +11,7 @@ resources:
     actions:
       pre-deploy:
         - run: mvn package -DskipTests
-          path: ./
+          path: ./rentSystem-provider6666
     props:
       region: cn-shenzhen
       functionName: java-FC-1
