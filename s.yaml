@@ -5,10 +5,10 @@ access: default
 resources:
   start_springboot:
     component: fc3
-    actions:
-      pre-deploy:
-        - run: mvn package -DskipTests
-          path: ./code
+    # actions:
+    #   pre-deploy:
+    #     - run: mvn package -DskipTests
+    #       path: ./code
     props:
       region: cn-shenzhen
       description: Serverless Devs Web Framework Function
@@ -17,9 +17,9 @@ resources:
       memorySize: 2048
       diskSize: 512
       instanceConcurrency: 100
-      customRuntimeConfig:
-        command:
-          - ./bootstrap
+      # customRuntimeConfig:
+      #   command:
+      #     - ./bootstrap
       functionName: java-FC-3s9d
       code: ./code
       triggers:
