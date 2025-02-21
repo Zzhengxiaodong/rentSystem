@@ -8,10 +8,10 @@ vars:
 resources:
   start_springboot:
     component: fc3
-    actions:
-      pre-deploy:
-        - run: mvn package -DskipTests
-          path: ./rentSystem-provider6666
+    # actions:
+    #   pre-deploy:
+    #     - run: mvn package -DskipTests
+    #       path: ./rentSystem-provider6666
     props:
       region: cn-shenzhen
       functionName: java-FC-1
