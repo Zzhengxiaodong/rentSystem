@@ -15,7 +15,6 @@ resources:
       handler: string
       memorySize: 128
       runtime: custom
-      handler: 
       disSize: 512
       triggers:
         triggerName: httpTrigger
