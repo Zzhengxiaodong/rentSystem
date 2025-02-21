@@ -28,9 +28,9 @@ resources:
           - '-jar'
           - target/demo-0.0.1-SNAPSHOT.jar
       triggers:
-        - name: httpTrigger
-          type: http
-          config:
+        - triggerName: httpTrigger
+          triggerType: http
+          triggerConfig:
             authType: anonymous
             methods:
               - GET
