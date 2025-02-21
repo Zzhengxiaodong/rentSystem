@@ -25,7 +25,7 @@ resources:
         args:
           - '-Dserver.port=9000'
           - '-jar'
-          - target/demo-0.0.1-SNAPSHOT.jar
+          - rentSystem-provider6666/target/demo-0.0.1-SNAPSHOT.jar
       triggers:
         - name: httpTrigger
           type: http
