@@ -5,10 +5,6 @@ access: default
 resources:
   start_springboot:
     component: fc3
-    actions:
-      pre-deploy:
-        - run: mvn package -DskipTests
-          path: ./
     props:
       region: cn-shenzhen
       functionName: rentSystem-haxo
