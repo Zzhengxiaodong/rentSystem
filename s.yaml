@@ -23,10 +23,10 @@ resources:
       customRuntimeConfig:
         command:
           - java -jar target/rentSystem-provider6666-0.0.1-SNAPSHOT.jar
-        args:
-          - '-Dserver.port=9000'
-          - '-jar'
-          - target/demo-0.0.1-SNAPSHOT.jar
+        # args:
+        #   - '-Dserver.port=9000'
+        #   - '-jar'
+        #   - target/demo-0.0.1-SNAPSHOT.jar
       triggers:
         - triggerName: httpTrigger
           triggerType: http
