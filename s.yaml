@@ -22,7 +22,7 @@ resources:
       caPort: 9000
       customRuntimeConfig:
         command:
-          - java -jar ./target/rentSystem-provider6666-0.0.1-SNAPSHOT.jar
+          - java
         args:
           - '-Dserver.port=9000'
           - '-jar'
