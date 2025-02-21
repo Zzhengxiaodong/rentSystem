@@ -15,7 +15,7 @@ resources:
       memorySize: 128
       cpu: 0.05
       timeout: 60
-      code: ./
+      code: ./target/rentSystem-provider6666-0.0.1-SNAPSHOT.jar
       runtime: custom
       hanlder: bootstrap
       diskSize: 512
