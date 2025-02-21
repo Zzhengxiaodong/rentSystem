@@ -1,13 +1,12 @@
 edition: 3.0.0
 name: my-framework-app
 access: default
+
 resources:
-  start_springboot:
+  fcDemo:
     component: fc3
     props:
       region: cn-shenzhen
-      service:
-        name: serverless-devs-application
       functionName: rentSystem-haxo
       environmentVariables:
         LD_LIBRARY_PATH: >-
@@ -16,7 +15,7 @@ resources:
       memorySize: 128
       cpu: 0.05
       timeout: 60
-      codeUri: /root/.s/rentSystem-provider6666/  # 尝试使用绝对路径（调整为正确的绝对路径）
+      codeUri: ./
       diskSize: 512
       caPort: 9000
       customRuntimeConfig:
@@ -25,7 +24,7 @@ resources:
         args:
           - '-Dserver.port=9000'
           - '-jar'
-          - /root/.s/rentSystem-provider6666/target/demo-0.0.1-SNAPSHOT.jar  # 修改为绝对路径
+          - target/demo-0.0.1-SNAPSHOT.jar
       triggers:
         - name: httpTrigger
           type: http
