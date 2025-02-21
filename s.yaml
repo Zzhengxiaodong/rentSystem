@@ -3,7 +3,7 @@ name: my-framework-app
 access: default
 
 resources:
-  fcDemo:
+  start_springboot:
     component: fc3
     props:
       region: cn-shenzhen
