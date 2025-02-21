@@ -16,7 +16,7 @@ resources:
       memorySize: 128
       cpu: 0.05
       timeout: 60
-      codeUri: ./rentSystem-provider6666/
+      codeUri: /root/.s/rentSystem-provider6666/  # 尝试使用绝对路径（调整为正确的绝对路径）
       diskSize: 512
       caPort: 9000
       customRuntimeConfig:
@@ -25,7 +25,7 @@ resources:
         args:
           - '-Dserver.port=9000'
           - '-jar'
-          - rentSystem-provider6666/target/demo-0.0.1-SNAPSHOT.jar
+          - /root/.s/rentSystem-provider6666/target/demo-0.0.1-SNAPSHOT.jar  # 修改为绝对路径
       triggers:
         - name: httpTrigger
           type: http
