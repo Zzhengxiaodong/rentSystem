@@ -1,5 +1,5 @@
 edition: 3.0.0
-name: springboot-app-mdn
+name: my-framework-app
 access: default
 vars: 
   region: cn-hangzhou
