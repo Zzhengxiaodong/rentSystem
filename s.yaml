@@ -12,21 +12,20 @@ resources:
         LD_LIBRARY_PATH: >-
           /code:/code/lib:/usr/local/lib:/opt/lib:/opt/php8.1/lib:/opt/php8.0/lib:/opt/php7.2/lib
         JAVA_HOME: /usr/lib/jvm/java-8-openjdk-amd64
-      memorySize: 128
-      cpu: 0.05
+      memorySize: 512
+      cpu: 0.5
       timeout: 60
-      code: "./"
+      code: ./
       runtime: custom
       hanlder: bootstrap
       diskSize: 512
-      caPort: 9000
       customRuntimeConfig:
-        command:
-          - java
+        # command:
+        #   - java -jar /code/rentSystem-provider6666/target/rentSystem-provider6666-0.0.1-SNAPSHOT.jar
         args:
-          - '-Dserver.port=9000'
           - '-jar'
-          - target/demo-0.0.1-SNAPSHOT.jar
+          - /code/rentSystem-provider6666/target/rentSystem-provider6666-0.0.1-SNAPSHOT.jar
+           - '-Dserver.port=6555'
         port: 6555
       triggers:
         - triggerName: httpTrigger
