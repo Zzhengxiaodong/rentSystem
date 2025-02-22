@@ -18,7 +18,7 @@ resources:
       timeout: 60 # 函数运行的超时时间，单位: 秒
       code: ./ # 代码位置
       runtime: custom # 函数的运行时环境
-      hanlder: bootstrap # 指定函数入口的方法或文件的标识符，表示云函数执行的起点
+      # hanlder: bootstrap # 指定函数入口的方法或文件的标识符，表示云函数执行的起点
       diskSize: 512 # 函数的磁盘规格
       customRuntimeConfig: # 自定义运行时的启动配置
         command: # 容器的启动参数
