@@ -27,7 +27,7 @@ resources:
           - '-Dserver.port=9000'
           - '-jar'
           - target/demo-0.0.1-SNAPSHOT.jar
-          port: 6555
+        port: 6555
       triggers:
         - triggerName: httpTrigger
           triggerType: http
