@@ -12,6 +12,6 @@ public class TestController {
     @GetMapping("/get")
     public String get(){
         log.error("测试函数计算FC");
-        return "hello world!";
+        return "hello world!!";
     }
 }
