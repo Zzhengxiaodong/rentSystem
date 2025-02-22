@@ -39,5 +39,3 @@ resources:
               - DELETE
               - HEAD
               - PATCH
-            healthCheck:
-              port: 9000
