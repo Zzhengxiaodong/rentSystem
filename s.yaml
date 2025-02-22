@@ -17,7 +17,7 @@ resources:
       timeout: 60
       code: ./
       runtime: custom
-      hanlder: bootstrap
+      # hanlder: bootstrap
       diskSize: 512
       customRuntimeConfig:
         command:
