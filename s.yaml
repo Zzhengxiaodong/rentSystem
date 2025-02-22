@@ -19,7 +19,6 @@ resources:
       runtime: custom
       hanlder: bootstrap
       diskSize: 512
-      caPort: 6555
       customRuntimeConfig:
         command:
           - 'java -jar /code/rentSystem-provider6666/target/rentSystem-provider6666-0.0.1-SNAPSHOT.jar'
