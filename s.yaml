@@ -7,7 +7,7 @@ resources:
     component: fc3
     props:
       region: cn-shenzhen
-      functionName: rentSystem-haxo
+      functionName: rentSystem-axxs
       environmentVariables:
         LD_LIBRARY_PATH: >-
           /code:/code/lib:/usr/local/lib:/opt/lib:/opt/php8.1/lib:/opt/php8.0/lib:/opt/php7.2/lib
