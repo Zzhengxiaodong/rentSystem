@@ -28,7 +28,7 @@ public class RentSystemProvider6666Application {
         System.out.println(params.toString());
         System.out.println(body);
         System.out.printf("FC Invoke End RequestId: %s%n", requestId);
-        return String.format("Hello World!!!xxxx");
+        return String.format("Hello World!!!!xxxx");
     }
 
 }
