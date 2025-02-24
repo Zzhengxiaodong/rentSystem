@@ -20,13 +20,17 @@ resources:
       # hanlder: bootstrap
       diskSize: 512
       customRuntimeConfig:
+        port: 6555
         command:
-          - java -jar /code/rentSystem-provider6666/target/rentSystem-provider6666-0.0.1-SNAPSHOT.jar
-        args:
-          - '-Dserver.port=6555'
+        #   - java -jar /code/rentSystem-provider6666/target/rentSystem-provider6666-0.0.1-SNAPSHOT.jar
+        # args:
+        #   - '-Dserver.port=6555'
         #   - '-jar'
         #   - target/demo-0.0.1-SNAPSHOT.jar
-        port: 6555
+          - java
+          - '-Dserver.port=6555'
+          - '-jar'
+          - /code/rentSystem-provider6666/target/rentSystem-provider6666-0.0.1-SNAPSHOT.jar
       triggers:
         - triggerName: httpTrigger
           triggerType: http
